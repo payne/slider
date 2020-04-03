@@ -1,5 +1,21 @@
 <p>slider1 works!</p>
+
+<ul>
+<li>
 <mv-slider [(value)]="value" [min]="1" [max]="100" [enabled]="enabled" (change)="change()"></mv-slider>
+</li>
+</ul>
 
 <h2>{{value}}</h2>
+
+<hr/>
+
+<ul>
+  <li>
+<mv-slider [(value)]="vvalue" [min]="1" [max]="100" [enabled]="enabled"
+           orientation="vertical"
+           (change)="vchange()"></mv-slider>
+  </li></ul>
+
+<h2>{{vvalue}}</h2>
 
